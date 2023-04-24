@@ -17,4 +17,8 @@ router.get('/fourth',controller.fourth);
 //fifth :  Show the data of top 10 cities which have the highest number of users and their average income.
 router.get('/fifth',controller.fifth);
 
+router.get('/',function(req,res)
+{
+    return res.json("OK");
+});
 module.exports = router;
